@@ -6,4 +6,4 @@ python-axolotl==0.1.7
 python-axolotl-curve25519==0.1
 python-dateutil==2.4.2
 requests==2.0.0
-yowsup2==2.3.124
+yowsup2==2.3.123

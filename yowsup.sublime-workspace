@@ -1,0 +1,885 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"if",
+				"ife	if … else … end"
+			],
+			[
+				"ea",
+				"ea	each { |e| .. }"
+			],
+			[
+				"BRA",
+				"brandname"
+			],
+			[
+				"resc",
+				"rescue"
+			],
+			[
+				"for",
+				"for"
+			],
+			[
+				"BR",
+				"BRANDS"
+			],
+			[
+				"hei",
+				"min-height"
+			],
+			[
+				"TW",
+				"TWITTERWALL"
+			],
+			[
+				"received_",
+				"received_as_datetime"
+			],
+			[
+				"TYPE",
+				"TYPE_INSTAGRAM"
+			],
+			[
+				"DEF",
+				"DEFAULT_SCALETYPE"
+			],
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"cla",
+				"cla	class .. initialize .. end"
+			],
+			[
+				"pr",
+				"print"
+			],
+			[
+				"font",
+				"font-weight"
+			],
+			[
+				"ICON",
+				"ICON_WHATSAPP"
+			],
+			[
+				"type",
+				"type_as_text"
+			],
+			[
+				"T",
+				"TYPE_MAIL"
+			],
+			[
+				"TY",
+				"TYPE_SMS"
+			],
+			[
+				"TYPE_",
+				"TYPE_TWEET"
+			],
+			[
+				"SC",
+				"SCORE_PUBLISHED"
+			],
+			[
+				"do",
+				"dob	Insert do |variable| … end"
+			],
+			[
+				"STA",
+				"STATUS_DISABLED"
+			],
+			[
+				"RED",
+				"REDIS_KEY"
+			],
+			[
+				"S",
+				"STORE"
+			],
+			[
+				"co",
+				"counter"
+			],
+			[
+				"up",
+				"upcase  (function)"
+			],
+			[
+				"ap",
+				"awesome_print"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 291.0,
+		"selected_items":
+		[
+			[
+				"mark",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"mar",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"markdown",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"markd",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"Packe",
+				"Package Control: Enable Package"
+			],
+			[
+				"Sublime",
+				"SublimeLinter: Background Linting"
+			],
+			[
+				"Subl",
+				"SublimeLinter: Disable Linting"
+			],
+			[
+				"Package",
+				"Package Control: Enable Package"
+			],
+			[
+				"Packa",
+				"Package Control: Disable Package"
+			],
+			[
+				"Pack",
+				"Package Control: Disable Package"
+			],
+			[
+				"Linter",
+				"Preferences: SublimeLinter Settings – Default"
+			],
+			[
+				"package",
+				"Package Control: Enable Package"
+			],
+			[
+				"code",
+				"Package Control: Disable Package"
+			],
+			[
+				"Mark",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"less",
+				"Set Syntax: LESS"
+			],
+			[
+				"console",
+				"Set Syntax: R Console"
+			],
+			[
+				"",
+				"Package Control: Install Package"
+			],
+			[
+				"packa",
+				"Package Control: Install Package"
+			],
+			[
+				"Install",
+				"Package Control: Install Package"
+			],
+			[
+				"goto",
+				"Goto Documentation"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"Sublimelint",
+				"SublimeLinter: Show Error List"
+			],
+			[
+				"Sublimelin",
+				"SublimeLinter: Extract Annotations"
+			],
+			[
+				"SublimeLinter",
+				"SublimeLinter: Show Error List"
+			],
+			[
+				"Package Control: ",
+				"Package Control: List Packages"
+			]
+		],
+		"width": 579.0
+	},
+	"console":
+	{
+		"height": 377.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": true,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/co/mnt/lxsdev/home/www/lxs/localconf-interoute.php",
+		"/Users/co/projects/isocert/template/html-source-7/page.html",
+		"/Users/co/projects/isocert/public/templates/personal2.html",
+		"/Users/co/projects/isocert/public/templates/_angebot.html",
+		"/Users/co/projects/isocert/public/templates/result1.html",
+		"/Users/co/projects/isocert/public/templates/_grundlagen.html",
+		"/Users/co/projects/isocert/public/templates/_daten.html",
+		"/Users/co/projects/isocert/public/templates/_datenschutz.html",
+		"/Users/co/projects/isocert/public/js/custom.js",
+		"/Users/co/projects/isocert/public/templates/calc.html",
+		"/Users/co/projects/isocert/public/templates/start.html",
+		"/Users/co/projects/isocert/template/html-source-7/form.html",
+		"/Users/co/projects/isocert/views/mailcustomer.txt.erb",
+		"/Users/co/projects/isocert/views/mailinternal.txt.erb",
+		"/Users/co/projects/isocert/views/layout_old.erb",
+		"/Users/co/projects/isocert/app/iso.rb",
+		"/Users/co/projects/isocert/views/pdf.erb",
+		"/Users/co/projects/isocert/template/html-source-7/css/style.css",
+		"/Users/co/projects/isocert/public/css/pdf.css",
+		"/Users/co/projects/isocert/public/templates/summary.html",
+		"/Users/co/projects/isocert/test.rb",
+		"/Users/co/projects/isocert/views/pdflayout.erb",
+		"/Users/co/projects/isocert/views/info.erb",
+		"/Users/co/projects/isocert/Gemfile",
+		"/Users/co/projects/isocert/.env",
+		"/Users/co/projects/isocert/views/mailcustomer.erb",
+		"/Users/co/projects/isocert/spec/iso_spec.rb",
+		"/Users/co/projects/isocert/app/number_helpers.rb",
+		"/Users/co/projects/isocert/Guardfile",
+		"/Users/co/projects/isocert/app/test.rb",
+		"/Users/co/projects/isocert/app/array.rb",
+		"/Users/co/projects/isocert/views/index.erb",
+		"/Users/co/projects/isocert/i18n/en.yml",
+		"/Users/co/projects/isocert/i18n/de.yml",
+		"/Users/co/projects/isocert/public/templates/personal1confirm.html",
+		"/Users/co/projects/isocert/public/templates/result2.html",
+		"/Users/co/projects/isocert/public/templates/summaryconfirm.html",
+		"/Users/co/projects/isocert/public/templates/step4.html",
+		"/Users/co/projects/isocert/public/templates/step5.html",
+		"/Users/co/projects/isocert/public/templates/step3.html",
+		"/Users/co/projects/isocert/public/templates/step2.html",
+		"/Users/co/projects/isocert/public/templates/step1.html",
+		"/Users/co/Library/Application Support/Sublime Text 2/Packages/User/SublimeLinter.sublime-settings",
+		"/Users/co/projects/isocert/gemfile",
+		"/Users/co/projects/isocert/public/pdffooter.html",
+		"/Users/co/projects/isocert/public/pdfheader.html",
+		"/Users/co/projects/isocert/public/js/tooltips.js",
+		"/Users/co/projects/isocert/views/layout.erb",
+		"/Users/co/projects/isocert/views/step1.html",
+		"/Users/co/projects/isocert/public/pdf.css",
+		"/Volumes/JET128G/Downloads/david/bootstrap/test.html",
+		"/Users/co/projects/isocert/views/error.erb",
+		"/Volumes/JET128G/Downloads/david/bootstrap/magicapp_styles.css",
+		"/Volumes/JET128G/Downloads/david/test.html",
+		"/Users/co/projects/isocert/public/pdfcover.html",
+		"/Users/co/projects/gemfile",
+		"/Users/co/projects/dnv.de/push.sh",
+		"/Users/co/projects/dnv.de/http/fileadmin/templates/template.html",
+		"/Users/co/projects/dnv.de/http/fileadmin/template.html",
+		"/Users/co/temp/carl vertrag.txt",
+		"/Volumes/ds212/projekte/projekte/bellicon/zonen.txt",
+		"/Volumes/ds212/projekte/projekte/DNV/konzept isocert 20.md",
+		"/Users/co/temp/Protokoll bürgermobil.txt",
+		"/Volumes/ds212/projekte/projekte/carlkonferenz/eventapp/redata-ocd.txt",
+		"/Volumes/JET128G/Downloads/Addons.txt",
+		"/Volumes/JET128G/Downloads/Voting.txt",
+		"/Users/co/projects/twitterwall/views/info.erb",
+		"/Users/co/projects/twitterwall/views/send.on-screen.info/layout.erb",
+		"/Users/co/projects/twitterwall/public/send.on-screen.info/css/send.on-screen.info.less",
+		"/Users/co/projects/twitterwall/views/send.on-screen.info/home.erb",
+		"/Users/co/projects/twitterwall/Gemfile",
+		"/Users/co/projects/twitterwall/views/twitterwall.dev/home.erb",
+		"/Users/co/projects/twitterwall/public/application.css",
+		"/Users/co/projects/twitterwall/tweetstream.rb",
+		"/Users/co/projects/twitterwall/Procfile",
+		"/Users/co/projects/twitterwall/views/projects/index.erb",
+		"/Users/co/projects/twitterwall/views/_demoform.erb",
+		"/Users/co/projects/twitterwall/views/projects/_formput.js.erb",
+		"/Users/co/projects/twitterwall/views/projects/new.erb",
+		"/Users/co/projects/twitterwall/views/projects/_form.erb",
+		"/Users/co/projects/twitterwall/views/projects/update.erb",
+		"/Users/co/projects/twitterwall/views/_demoform.js.erb",
+		"/Users/co/projects/twitterwall/views/projects/_formpost.js.erb",
+		"/Users/co/projects/twitterwall/Gemfile.lock",
+		"/Users/co/projects/twitterwall/app/connector.rb",
+		"/Users/co/projects/twitterwall/Guardfile",
+		"/Users/co/projects/twitterwall/views/twitterwall.dev/layout.erb",
+		"/Users/co/projects/twitterwall/public/validator.min.js",
+		"/Users/co/projects/twitterwall/.env",
+		"/Users/co/projects/twitterwall/.irbrc",
+		"/Users/co/projects/twitterwall/views/messages/_row.erb",
+		"/Users/co/projects/twitterwall/suspender.rb",
+		"/Users/co/projects/twitterwall/views/messages/index.erb",
+		"/Users/co/projects/twitterwall/views/messages/rss.builder",
+		"/Users/co/projects/twitterwall/views/messages/xls.builder",
+		"/Users/co/projects/twitterwall/views/_demo.erb",
+		"/Users/co/projects/twitterwall/views/layout.erb",
+		"/Users/co/projects/twitterwall/views/messages/dashboard.erb",
+		"/Users/co/projects/twitterwall/views/messages/cloud.erb",
+		"/Users/co/projects/twitterwall/views/send.on-screen.info/_features.erb",
+		"/Users/co/projects/twitterwall/procfile",
+		"/Users/co/projects/twitterwall/guardfile",
+		"/Users/co/projects/twitterwall/app/string.rb",
+		"/Users/co/projects/twitterwall/de.yml",
+		"/Users/co/projects/twitterwall/public/grayscale/js/grayscale.js",
+		"/Users/co/Library/Application Support/Sublime Text 2/Packages/User/SublimeCodeIntel.sublime-settings",
+		"/Users/co/Library/Application Support/Sublime Text 2/Packages/SublimeCodeIntel/SublimeCodeIntel.sublime-settings",
+		"/Users/co/Library/Application Support/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+		"/Users/co/Library/Application Support/Sublime Text 2/Packages/SublimeLinter/SublimeLinter.sublime-settings",
+		"/Users/co/Library/Application Support/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
+		"/Users/co/projects/twitterwall/gemfile.lock",
+		"/Users/co/projects/twitterwall/Gemfile.locl",
+		"/Users/co/Library/Application Support/Sublime Text 2/Packages/User/JSON.sublime-settings",
+		"/Users/co/Library/Application Support/Sublime Text 2/Packages/User/Default (OSX).sublime-keymap",
+		"/Users/co/projects/twitterwall/views/messages/_refresh.js.erb",
+		"/Users/co/projects/twitterwall/views/messages/_messagealert.erb",
+		"/Users/co/projects/twitterwall/views/messages/wall.erb",
+		"/Users/co/projects/twitterwall/views/twitterwall.dev/demo.erb",
+		"/Users/co/projects/twitterwall/views/send.on-screen.info/demo.erb",
+		"/Users/co/projects/twitterwall/views/projects/delete.erb",
+		"/Users/co/projects/twitterwall/views/messages/xml.builder",
+		"/Users/co/projects/twitterwall/views/messages/alchemy.xml.builder",
+		"/Users/co/projects/twitterwall/views/error.erb",
+		"/Users/co/projects/twitterwall/whatsappstream.rb",
+		"/Users/co/projects/twitterwall/views/messages/text.erb",
+		"/Users/co/projects/twitterwall/public/twitterwall.edit.de/css/grayscale.css",
+		"/Volumes/ds212/privat/privat/co/Steuern/artikel.csv",
+		"/Volumes/ds212/privat/privat/co/Steuern/artikel-test.csv"
+	],
+	"find":
+	{
+		"height": 37.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"download",
+			".small",
+			"small",
+			"textarea",
+			"has-error",
+			"background-color",
+			"form",
+			"border-color",
+			"../",
+			"title_",
+			"error",
+			"<br>",
+			"<br />",
+			"</span>",
+			"<span style=\"font-size: medium;\">",
+			"scope",
+			"getstaff",
+			":high",
+			"\"y\"",
+			"\"x\"",
+			"\"amount\"",
+			"\"staff\"",
+			"title",
+			"tagessatzsumme",
+			"###",
+			"###VALUE_",
+			"::TYPE",
+			"rss",
+			"rack",
+			"sources",
+			"sinatra",
+			"status 400",
+			"created_as_date$",
+			"received_as_date$",
+			"received_as_date",
+			"formats",
+			"locale",
+			"active_at",
+			"thin",
+			"auto",
+			"input-xlarge",
+			"control-group",
+			"anon",
+			"input-xxlarge",
+			"control-label",
+			"control-group",
+			"text",
+			"}\\n\"",
+			"ap.",
+			"latest_as_string",
+			"logger",
+			"client",
+			"actives_for_twitter",
+			"maxlen",
+			"ohm",
+			"track",
+			"workon",
+			"heimann",
+			"default_region",
+			"yowsup",
+			"neptun",
+			"yowsup",
+			"verbose",
+			"yowsup",
+			"verbose",
+			"COMPUTE",
+			"KeyStream",
+			"Keystream",
+			"keystream",
+			"font-family",
+			"font-",
+			"font",
+			"padding",
+			"timestamp",
+			"pushname",
+			"_d",
+			"md-3",
+			"sm-3",
+			"white",
+			"@test",
+			"primary",
+			"intro-text",
+			"self",
+			"receive?",
+			"ruby",
+			"herokudynocount",
+			"herokurelease",
+			"heroku",
+			"ohm",
+			"light",
+			"small",
+			"light",
+			"layout",
+			"small",
+			"_AMOUNT",
+			"alchemy",
+			"simplelink",
+			"gettagessatz",
+			"5844",
+			"5637",
+			"443417700438925312",
+			"<%\\s%>",
+			"authkey",
+			"tracker",
+			"slim",
+			"messages",
+			"get",
+			"layout",
+			"get",
+			"isStaticCacheble",
+			"media_url",
+			"entities",
+			"media",
+			"no-cache",
+			"no_cache",
+			"MAXNUM_TWEETS",
+			"tweetstore",
+			"markedtweets",
+			"tweetstore",
+			"tim",
+			" ",
+			" \n",
+			"secs",
+			".",
+			"secs",
+			".",
+			"post",
+			"tab"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": true,
+		"replace_history":
+		[
+			"",
+			"</p>",
+			"<p>",
+			":mt",
+			":y",
+			":x",
+			":amount",
+			":staff",
+			"title_de",
+			"%>",
+			"<%= @iso.",
+			"form-control",
+			"form-group",
+			"form-control",
+			"col-sm-2 control-label",
+			"form-group",
+			" %>",
+			"emlogger",
+			"twitter",
+			"server",
+			"@verbose",
+			"@compute",
+			"md-4",
+			"md-3",
+			"medium",
+			"",
+			"authtoken",
+			"MAXNUM_MSGS",
+			"",
+			",",
+			"",
+			","
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 33.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 102.0
+	},
+	"replace":
+	{
+		"height": 66.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"number",
+				"app/number_helpers.rb"
+			],
+			[
+				"res",
+				"public/templates/result2.html"
+			],
+			[
+				"style.css",
+				"public/css/style.css"
+			],
+			[
+				"",
+				"public/templates/result2.html"
+			],
+			[
+				"page",
+				"template/html-source-7/page.html"
+			],
+			[
+				"index",
+				"template/html-source-7/index.html"
+			],
+			[
+				"per",
+				"public/templates/personal2.html"
+			],
+			[
+				"form",
+				"template/html-source-7/form.html"
+			],
+			[
+				"datensh",
+				"public/templates/_datenschutz.html"
+			],
+			[
+				"start",
+				"public/templates/start.html"
+			],
+			[
+				"layout",
+				"views/layout_old.erb"
+			],
+			[
+				".env",
+				".env"
+			],
+			[
+				"app",
+				"app.rb"
+			],
+			[
+				"info",
+				"views/info.erb"
+			],
+			[
+				"app.",
+				"app.rb"
+			],
+			[
+				"gemfile",
+				"Gemfile"
+			],
+			[
+				"test.rb",
+				"test.rb"
+			],
+			[
+				"guard",
+				"Guardfile"
+			],
+			[
+				"iso",
+				"public/js/isocert.js"
+			],
+			[
+				"gem",
+				"Gemfile"
+			],
+			[
+				"pdf.css",
+				"public/css/pdf.css"
+			],
+			[
+				"ap",
+				"app.rb"
+			],
+			[
+				"gemfile.lock",
+				"twitterwall/Gemfile.lock"
+			],
+			[
+				"procfile",
+				"twitterwall/Procfile"
+			],
+			[
+				"proc",
+				"twitterwall/Procfile"
+			],
+			[
+				"suspender",
+				"twitterwall/suspender.rb"
+			],
+			[
+				"row",
+				"twitterwall/views/messages/_row.erb"
+			],
+			[
+				"pro",
+				"twitterwall/app/project.rb"
+			],
+			[
+				"home",
+				"twitterwall/views/send.on-screen.info/home.erb"
+			],
+			[
+				"co",
+				"twitterwall/app/connector.rb"
+			],
+			[
+				"mess",
+				"twitterwall/app/message.rb"
+			],
+			[
+				"en.",
+				"twitterwall/i18n/en.yml"
+			],
+			[
+				"en",
+				"twitterwall/i18n/en.yml"
+			],
+			[
+				"conn",
+				"twitterwall/app/connector.rb"
+			],
+			[
+				"wha",
+				"twitterwall/whatsappstream.rb"
+			],
+			[
+				"su",
+				"suspender.rb"
+			],
+			[
+				"mail",
+				"mailpoller.rb"
+			],
+			[
+				"whatsapp",
+				"whatsappstream.rb"
+			],
+			[
+				"twee",
+				"tweetstream.rb"
+			],
+			[
+				"sus",
+				"suspender.rb"
+			],
+			[
+				"wa",
+				"views/messages/wall.erb"
+			],
+			[
+				"lay",
+				"views/send.on-screen.info/layout.erb"
+			],
+			[
+				"gray",
+				"public/grayscale/css/grayscale.css"
+			],
+			[
+				"twe",
+				"tweetstream.rb"
+			],
+			[
+				"heroku",
+				"heroku.rb"
+			],
+			[
+				"her",
+				"heroku.rb"
+			],
+			[
+				"un",
+				"untitled"
+			],
+			[
+				"textile",
+				"views/public.textile"
+			],
+			[
+				"quellen",
+				"views/quellen.textile"
+			],
+			[
+				"message",
+				"app/messagestore.rb"
+			],
+			[
+				"tw",
+				"tweetstream.rb"
+			],
+			[
+				"proj",
+				"app/project.rb"
+			],
+			[
+				"index.slim",
+				"views/index.slim"
+			],
+			[
+				"messa",
+				"app/messagestore.rb"
+			],
+			[
+				"store",
+				"app/messagestore.rb"
+			],
+			[
+				"layo",
+				"views/layout.slim"
+			],
+			[
+				"tweets",
+				"app/tweetstore.rb"
+			],
+			[
+				"slim",
+				"views/layout.slim"
+			],
+			[
+				"about",
+				"views/about.textile"
+			],
+			[
+				"time",
+				"app/time.rb"
+			],
+			[
+				"ru",
+				"config.ru"
+			],
+			[
+				"keymap",
+				"/Users/co/Library/Application Support/Sublime Text 2/Packages/Default/Default (OSX).sublime-keymap"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"show_minimap": false,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 407.0,
+	"status_bar_visible": true
+}

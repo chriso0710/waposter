@@ -1,0 +1,9 @@
+Pillow==2.9.0
+argparse==1.2.1
+protobuf==3.0.0-alpha-1
+pycrypto==2.6.1
+python-axolotl==0.1.7
+python-axolotl-curve25519==0.1
+python-dateutil==2.4.2
+requests==2.0.0
+yowsup2==2.3.124

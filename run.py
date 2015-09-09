@@ -1,3 +1,5 @@
+import logging
+
 from yowsup.stacks import YowStack
 from layer import EchoLayer
 from yowsup.layers import YowLayerEvent
@@ -16,7 +18,6 @@ from yowsup.layers.protocol_calls              import YowCallsProtocolLayer
 from yowsup.common import YowConstants
 from yowsup import env
 
-import logging
 #logging.basicConfig(level=logging.DEBUG)
 
 import os
@@ -58,3 +59,5 @@ if __name__ == "__main__":
         stack.loop(timeout = 0.5, discrete = 0.5)
     except AuthError as e:
         print("Authentication Error: %s" % e.message)
+    except Exception as e:
+        print("Other Error: %s" % e.message)

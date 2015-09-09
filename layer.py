@@ -1,3 +1,4 @@
+from yowsup.layers           import YowLayerEvent
 from yowsup.layers.interface import YowInterfaceLayer, ProtocolEntityCallback
 from yowsup.layers.network   import YowNetworkLayer
 
@@ -9,6 +10,9 @@ class EchoLayer(YowInterfaceLayer):
         print layerEvent.getName()
         if layerEvent.getName() == YowNetworkLayer.EVENT_STATE_DISCONNECTED:
             print("Disconnected: %s" % layerEvent.getArg("reason"))
+            time.sleep(20)
+            print("Issueing EVENT_STATE_CONNECT")
+            self.getStack().broadcastEvent(YowLayerEvent(YowNetworkLayer.EVENT_STATE_CONNECT))
         elif layerEvent.getName() == YowNetworkLayer.EVENT_STATE_CONNECTED:
             print("Connected")
 

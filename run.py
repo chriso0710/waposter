@@ -1,8 +1,9 @@
 import logging
+import os
 
 from yowsup.stacks import YowStack
 from layer import EchoLayer
-from yowsup.layers import YowLayerEvent
+from yowsup.layers                             import YowLayerEvent
 from yowsup.layers.auth                        import YowCryptLayer, YowAuthenticationProtocolLayer, AuthError
 from yowsup.layers.coder                       import YowCoderLayer
 from yowsup.layers.network                     import YowNetworkLayer
@@ -18,9 +19,9 @@ from yowsup.layers.protocol_calls              import YowCallsProtocolLayer
 from yowsup.common import YowConstants
 from yowsup import env
 
-#logging.basicConfig(level=logging.DEBUG)
+if os.environ['DEBUG'] == '1':
+    logging.basicConfig(level=logging.DEBUG)
 
-import os
 CREDENTIALS = (os.environ['PHONE'], os.environ['PASSWORD'])
 
 if __name__ == "__main__":

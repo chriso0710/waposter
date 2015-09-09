@@ -25,29 +25,16 @@ if os.environ['DEBUG'] == '1':
 CREDENTIALS = (os.environ['PHONE'], os.environ['PASSWORD'])
 
 if __name__ == "__main__":
-    encryptionEnabled = False
-    if encryptionEnabled:
-        layers = (
-            EchoLayer,
-            (YowAuthenticationProtocolLayer, YowMessagesProtocolLayer, YowReceiptProtocolLayer, YowAckProtocolLayer, YowMediaProtocolLayer, YowIqProtocolLayer, YowCallsProtocolLayer),
-            YowAxolotlLayer,
-            YowLoggerLayer,
-            YowCoderLayer,
-            YowCryptLayer,
-            YowStanzaRegulator,
-            YowNetworkLayer
-        )
-    else:
-        env.CURRENT_ENV = env.S40YowsupEnv()
-        layers = (
-            EchoLayer,
-            (YowAuthenticationProtocolLayer, YowMessagesProtocolLayer, YowReceiptProtocolLayer, YowAckProtocolLayer, YowMediaProtocolLayer, YowIqProtocolLayer, YowCallsProtocolLayer),
-            YowLoggerLayer,
-            YowCoderLayer,
-            YowCryptLayer,
-            YowStanzaRegulator,
-            YowNetworkLayer
-        )
+    layers = (
+        EchoLayer,
+        (YowAuthenticationProtocolLayer, YowMessagesProtocolLayer, YowReceiptProtocolLayer, YowAckProtocolLayer, YowMediaProtocolLayer, YowIqProtocolLayer, YowCallsProtocolLayer),
+        YowAxolotlLayer,
+        YowLoggerLayer,
+        YowCoderLayer,
+        YowCryptLayer,
+        YowStanzaRegulator,
+        YowNetworkLayer
+    )
 
     stack = YowStack(layers)
     stack.setProp(YowAuthenticationProtocolLayer.PROP_CREDENTIALS, CREDENTIALS)

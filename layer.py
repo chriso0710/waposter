@@ -30,7 +30,8 @@ class EchoLayer(YowInterfaceLayer):
 
     @ProtocolEntityCallback("receipt")
     def onReceipt(self, entity):
-        self.toLower(entity.ack())
+        ack = OutgoingAckProtocolEntity(entity.getId(), "receipt", entity.getType(), entity.getFrom())
+        self.toLower(ack)
 
     def onTextMessage(self, messageProtocolEntity):
         # print(dir(messageProtocolEntity))

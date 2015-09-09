@@ -2,8 +2,8 @@ import logging
 import os
 
 from yowsup.stacks import YowStack
-from layer import EchoLayer
-from yowsup.layers                             import YowLayerEvent
+from .layer import EchoLayer
+from yowsup.layers import YowLayerEvent
 from yowsup.layers.auth                        import YowCryptLayer, YowAuthenticationProtocolLayer, AuthError
 from yowsup.layers.coder                       import YowCoderLayer
 from yowsup.layers.network                     import YowNetworkLayer
@@ -13,7 +13,6 @@ from yowsup.layers.stanzaregulator             import YowStanzaRegulator
 from yowsup.layers.protocol_receipts           import YowReceiptProtocolLayer
 from yowsup.layers.protocol_acks               import YowAckProtocolLayer
 from yowsup.layers.logger                      import YowLoggerLayer
-from yowsup.layers.axolotl                     import YowAxolotlLayer
 from yowsup.layers.protocol_iq                 import YowIqProtocolLayer
 from yowsup.layers.protocol_calls              import YowCallsProtocolLayer
 from yowsup.common import YowConstants
@@ -25,16 +24,30 @@ if os.environ['DEBUG'] == '1':
 CREDENTIALS = (os.environ['PHONE'], os.environ['PASSWORD'])
 
 if __name__ == "__main__":
-    layers = (
-        EchoLayer,
-        (YowAuthenticationProtocolLayer, YowMessagesProtocolLayer, YowReceiptProtocolLayer, YowAckProtocolLayer, YowMediaProtocolLayer, YowIqProtocolLayer, YowCallsProtocolLayer),
-        YowAxolotlLayer,
-        YowLoggerLayer,
-        YowCoderLayer,
-        YowCryptLayer,
-        YowStanzaRegulator,
-        YowNetworkLayer
-    )
+    encryptionEnabled = False
+    if encryptionEnabled:
+        from yowsup.layers.axolotl import YowAxolotlLayer
+        layers = (
+            EchoLayer,
+            (YowAuthenticationProtocolLayer, YowMessagesProtocolLayer, YowReceiptProtocolLayer, YowAckProtocolLayer, YowMediaProtocolLayer, YowIqProtocolLayer, YowCallsProtocolLayer),
+            YowAxolotlLayer,
+            YowLoggerLayer,
+            YowCoderLayer,
+            YowCryptLayer,
+            YowStanzaRegulator,
+            YowNetworkLayer
+        )
+    else:
+        env.CURRENT_ENV = env.S40YowsupEnv()
+        layers = (
+            EchoLayer,
+            (YowAuthenticationProtocolLayer, YowMessagesProtocolLayer, YowReceiptProtocolLayer, YowAckProtocolLayer, YowMediaProtocolLayer, YowIqProtocolLayer, YowCallsProtocolLayer),
+            YowLoggerLayer,
+            YowCoderLayer,
+            YowCryptLayer,
+            YowStanzaRegulator,
+            YowNetworkLayer
+        )
 
     stack = YowStack(layers)
     stack.setProp(YowAuthenticationProtocolLayer.PROP_CREDENTIALS, CREDENTIALS)

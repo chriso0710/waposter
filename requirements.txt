@@ -6,4 +6,4 @@ python-axolotl==0.1.7
 python-axolotl-curve25519==0.1
 python-dateutil==2.4.2
 requests==2.0.0
--e git+git://github.com/tgalal/yowsup.git@v2.4
+-e git+git://github.com/tgalal/yowsup.git@v2.4#egg=yowsup

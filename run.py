@@ -2,7 +2,7 @@ import logging
 import os
 
 from yowsup.stacks import YowStack
-from .layer import EchoLayer
+from layer import EchoLayer
 from yowsup.layers import YowLayerEvent
 from yowsup.layers.auth                        import YowCryptLayer, YowAuthenticationProtocolLayer, AuthError
 from yowsup.layers.coder                       import YowCoderLayer

@@ -4,7 +4,7 @@ from yowsup.layers.network   import YowNetworkLayer
 
 import datetime, sys, json, time, requests, os
 
-class EchoLayer(YowInterfaceLayer):
+class ReceiveLayer(YowInterfaceLayer):
 
     def onEvent(self, layerEvent):
         print layerEvent.getName()
@@ -25,14 +25,12 @@ class EchoLayer(YowInterfaceLayer):
         elif messageProtocolEntity.getType() == 'media':
             self.onMediaMessage(messageProtocolEntity)
 
-        #self.toLower(messageProtocolEntity.forward(messageProtocolEntity.getFrom()))
         self.toLower(messageProtocolEntity.ack())
         self.toLower(messageProtocolEntity.ack(True))
 
     @ProtocolEntityCallback("receipt")
     def onReceipt(self, entity):
-        ack = OutgoingAckProtocolEntity(entity.getId(), "receipt", entity.getType(), entity.getFrom())
-        self.toLower(ack)
+        self.toLower(entity.ack())
 
     def onTextMessage(self, messageProtocolEntity):
         # print(dir(messageProtocolEntity))

@@ -44,13 +44,16 @@ class ReceiveLayer(YowInterfaceLayer):
         if messageProtocolEntity.getMediaType() == 'image':
             print("Received image %s from %s" % (messageProtocolEntity.url, messageProtocolEntity.getFrom(False)))
             self.postit(messageProtocolEntity)
+        if messageProtocolEntity.getMediaType() == 'video':
+            print("Received video %s from %s" % (messageProtocolEntity.url, messageProtocolEntity.getFrom(False)))
+            self.postit(messageProtocolEntity)
 
     def postit(self, messageProtocolEntity):
         paramdict = {}
 
         if messageProtocolEntity.getType() == 'text':
             paramdict['messagecontent'] = messageProtocolEntity.getBody()
-        if messageProtocolEntity.getType() == 'media' and messageProtocolEntity.getMediaType() == 'image':
+        if messageProtocolEntity.getType() == 'media':
             paramdict['messagecontent'] = messageProtocolEntity.getCaption()
             paramdict['url']            = messageProtocolEntity.getMediaUrl()
             paramdict['size']           = messageProtocolEntity.getMediaSize()

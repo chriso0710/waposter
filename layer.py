@@ -92,6 +92,8 @@ class ReceiveLayer(YowInterfaceLayer):
             print("onMediaMessageBody: Saved as %s" % url)
             if self.postit(message, url):
                 self.toLower(message.ack(True))
+        else:
+            self.toLower(message.ack(True))
 
     def getDownloadableMediaMessageBody(self, message):
         # save as temp file

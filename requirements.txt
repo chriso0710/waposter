@@ -8,7 +8,6 @@ awscli==1.7.28
 bcdoc==0.14.0
 boto==2.32.1
 botocore==0.109.0
-cli53==0.4.3
 colorama==0.3.3
 dnspython==1.11.1
 docutils==0.12

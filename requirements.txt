@@ -23,5 +23,5 @@ requests==2.9.1
 rsa==3.1.4
 six==1.10.0
 wsgiref==0.1.2
--e git+git://github.com/jlguardi/yowsup.git#egg=yowsup
+-e git+git://github.com/jlguardi/yowsup.git#egg=yowsup2
 # -e git+git://github.com/tgalal/yowsup.git@v2.4.48#egg=yowsup

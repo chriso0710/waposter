@@ -3,7 +3,7 @@ from yowsup.layers.interface                            import YowInterfaceLayer
 from yowsup.layers.network                              import YowNetworkLayer
 from yowsup.layers.protocol_profiles.protocolentities   import *
 
-import datetime, sys, json, time, os, tempfile
+import datetime, sys, json, time, os, tempfile, re
 
 import boto
 from boto.s3.key import Key
@@ -26,6 +26,7 @@ class ReceiveLayer(YowInterfaceLayer):
     print s
 
     c = boto.connect_s3()
+    print c
     b = c.get_bucket(os.environ['BUCKET'])
     print b
 
@@ -52,13 +53,11 @@ class ReceiveLayer(YowInterfaceLayer):
     def onMessage(self, message):
 
         # TODO
-        #def onError(errorIqEntity, originalIqEntity):
-        #    print("Error getting profile picture")
-        #    print originalIqEntity
-        #    print errorIqEntity
+        def onError(errorIqEntity, originalIqEntity):
+            print("Error getting profile picture")
 
-        #entity = GetPictureIqProtocolEntity(message.getFrom(), preview=False)
-        #self._sendIq(entity, self.onGetContactPictureResult, onError)
+        entity = GetPictureIqProtocolEntity(message.getFrom(), preview=False)
+        self._sendIq(entity, self.onGetContactPictureResult, onError)
 
         if message.getType() == 'text':
             self.getTextMessageBody(message)
@@ -66,10 +65,6 @@ class ReceiveLayer(YowInterfaceLayer):
             self.getMediaMessageBody(message)
         else:
             print("Unknown message type %s " % message.getType())
-
-        # TODO entfernen da redundant?
-        # self.toLower(message.ack())
-        #self.toLower(message.ack(True))
 
     @ProtocolEntityCallback("receipt")
     def onReceipt(self, entity):
@@ -107,11 +102,30 @@ class ReceiveLayer(YowInterfaceLayer):
         k.set_acl('public-read')
         return k.generate_url(expires_in=0, query_auth=False)
 
-    def onGetContactPictureResult(self, resultGetPictureIqProtocolEntiy, getPictureIqProtocolEntity):
+    def onGetContactPictureResult(self, resultGetPictureIqProtocolEntity, getPictureIqProtocolEntity):
         # write to file example:
-        #resultGetPictureIqProtocolEntiy.writeToFile("/tmp/yowpics/%s_%s.jpg" % (getPictureIqProtocolEntity.getTo(), "preview" if resultGetPictureIqProtocolEntiy.isPreview() else "full"))
-        print getPictureIqProtocolEntity.getTo()
-        print getPictureIqProtocolEntity.getPictureData()
+        #print dir(resultGetPictureIqProtocolEntity)
+        #print dir(getPictureIqProtocolEntity)
+        #resultGetPictureIqProtocolEntity.writeToFile("/tmp/yowpics/%s_%s.jpg" % (getPictureIqProtocolEntity.getTo(), "preview" if resultGetPictureIqProtocolEntiy.isPreview() else "full"))
+        #filename = "%s/%s-fullprofile.jpg"%(tempfile.gettempdir(),resultGetPictureIqProtocolEntity.getPictureId())
+        #print filename
+        #with open(filename, 'wb') as f:
+        #    f.write(resultGetPictureIqProtocolEntity.getPictureData())
+        id = re.sub(r"@.*","",getPictureIqProtocolEntity.getTo())
+        filename = "%s-profile.jpg"%(id)
+        print("checking %s", filename)
+        k = self.b.get_key(filename)
+        if k:
+            url = k.generate_url(expires_in=0, query_auth=False)
+            print("%s exists: %s" % (filename, url))
+        else:
+            k = Key(self.b)
+            k.key = filename
+            k.set_contents_from_string(str(resultGetPictureIqProtocolEntity.getPictureData()))
+            k.set_metadata('Content-Type', 'image/jpeg')
+            k.set_acl('public-read')
+            url = k.generate_url(expires_in=0, query_auth=False)
+            print("%s doesn't exist, created: %s" % (k, url))
 
     def postit(self, message, url = None):
         paramdict = {}

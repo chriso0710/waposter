@@ -35,7 +35,7 @@ class ReceiveLayer(YowInterfaceLayer):
         if layerEvent.getName() == YowNetworkLayer.EVENT_STATE_DISCONNECTED:
             print("onEvent: Disconnected, reason: %s" % layerEvent.getArg("reason"))
             if layerEvent.getArg("reason") == 'Connection Closed':
-                time.sleep(20)
+                time.sleep(60)
                 print("onEvent: Issueing EVENT_STATE_CONNECT")
                 self.getStack().broadcastEvent(YowLayerEvent(YowNetworkLayer.EVENT_STATE_CONNECT))
         elif layerEvent.getName() == YowNetworkLayer.EVENT_STATE_CONNECTED:
@@ -53,11 +53,11 @@ class ReceiveLayer(YowInterfaceLayer):
     def onMessage(self, message):
 
         # TODO
-        def onError(errorIqEntity, originalIqEntity):
-            print("Error getting profile picture")
+        #def onError(errorIqEntity, originalIqEntity):
+        #    print("Error getting profile picture")
 
-        entity = GetPictureIqProtocolEntity(message.getFrom(), preview=False)
-        self._sendIq(entity, self.onGetContactPictureResult, onError)
+        #entity = GetPictureIqProtocolEntity(message.getFrom(), preview=False)
+        #self._sendIq(entity, self.onGetContactPictureResult, onError)
 
         if message.getType() == 'text':
             self.getTextMessageBody(message)

@@ -2,7 +2,7 @@
 
 Receive Whatsapp messages via yowsup and post/push them to a webservice as JSON.
 
-Uses Environment variables:
+Uses the following environment variables:
 
 * DEBUG: enable debug messages
 * PHONE: yowsup phone number
